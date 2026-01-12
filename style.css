@@ -317,39 +317,6 @@ form {
     font-style: italic;
 }
 
-/* Intro Block */
-.intro-block {
-    text-align: center;
-    padding: 20px 0;
-}
-
-.intro-block h2 {
-    font-size: 22px;
-    color: var(--text-primary);
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.intro-block p {
-    font-size: 16px;
-    color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
-.intro-block strong {
-    color: var(--primary-color);
-    font-weight: 600;
-}
-
-.intro-thanks {
-    margin-top: 25px;
-    font-style: italic;
-    color: var(--text-primary);
-    font-weight: 500;
-}
-
-
 /* Radio Buttons */
 .radio-group,
 .checkbox-group {

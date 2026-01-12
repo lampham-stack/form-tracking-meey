@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1e40af;
-    --primary-light: #3b82f6;
+    --primary-color: #001BB0;
+    --primary-dark: #001494;
+    --primary-light: #0052E2;
     --success-color: #10b981;
     --error-color: #ef4444;
     --text-primary: #1f2937;
@@ -23,7 +23,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #001BB0 0%, #0052E2 100%);
     min-height: 100vh;
     padding: 20px;
     line-height: 1.6;
@@ -55,7 +55,7 @@ body {
 }
 
 .form-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #001BB0 0%, #0052E2 100%);
     color: white;
     padding: 40px 30px;
     text-align: center;
@@ -224,7 +224,7 @@ form {
 
 .choice-btn.selected {
     border-color: var(--primary-color);
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(0, 27, 176, 0.1) 0%, rgba(0, 82, 226, 0.1) 100%);
 }
 
 .choice-icon {
@@ -277,7 +277,7 @@ form {
 }
 
 .next-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #001BB0 0%, #0052E2 100%);
     color: white;
 }
 
@@ -459,7 +459,7 @@ form {
 .other-input:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    box-shadow: 0 0 0 3px rgba(0, 27, 176, 0.1);
 }
 
 /* Error Message */
@@ -477,7 +477,7 @@ form {
 .submit-btn {
     width: 100%;
     padding: 16px 30px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #001BB0 0%, #0052E2 100%);
     color: white;
     border: none;
     border-radius: 12px;

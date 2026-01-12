@@ -65,6 +65,7 @@ body {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
+    color: white;
 }
 
 .form-header p {
@@ -304,8 +305,9 @@ form {
 }
 
 .required {
-    color: var(--error-color);
-    font-weight: 700;
+    color: #ff4444;
+    font-weight: bold;
+    margin-left: 3px;
 }
 
 .hint {
@@ -348,7 +350,6 @@ form {
     color: var(--text-primary);
     font-weight: 500;
 }
-
 
 /* Radio Buttons */
 .radio-group,
@@ -575,7 +576,6 @@ form {
         padding: 30px 20px;
     }
 
-    /* Step Indicator */
     .step-indicator {
         padding: 0 10px;
     }
@@ -594,7 +594,6 @@ form {
         max-width: 40px;
     }
 
-    /* Choice Buttons */
     .button-group {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -616,7 +615,6 @@ form {
         font-size: 13px;
     }
 
-    /* Questions */
     .question-label {
         font-size: 15px;
     }
@@ -626,7 +624,6 @@ form {
         font-size: 14px;
     }
 
-    /* Navigation Buttons */
     .button-row {
         flex-direction: column;
     }
@@ -642,9 +639,7 @@ form {
     .next-btn:hover {
         transform: none;
     }
-
 }
-
 
 /* Logo styling */
 .header-logo {
@@ -654,26 +649,4 @@ form {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.header-subtitle {
-    color: #0066FF;
-    font-weight: 600;
-    font-size: 0.85rem;
-    letter-spacing: 1.5px;
-    margin-top: -5px;
-    text-transform: uppercase;
-}
-
-.form-header h1 {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: #1a1a1a;
-    margin-bottom: 8px;
-}
-
-.required {
-    color: #ff4444;
-    font-weight: bold;
-    margin-left: 3px;
 }

@@ -236,7 +236,7 @@ form.addEventListener('submit', async function (e) {
 // Function to send data to Google Sheets
 async function sendToGoogleSheets(data) {
     // TODO: Replace with your Google Apps Script Web App URL
-    const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwVWaUD4838JEhV7IHTbhQ2RyhZ67r-OGCQ0n5OIr-kLMU85XKfut0AtUi89KmAQjKoLA/exec';
 
     // For demo purposes, we'll just log to console
     console.log('Form Data:', data);
@@ -250,7 +250,6 @@ async function sendToGoogleSheets(data) {
     await new Promise(resolve => setTimeout(resolve, 1000));
 
     // Uncomment this when you have your Google Apps Script URL
-    /*
     const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
@@ -259,7 +258,7 @@ async function sendToGoogleSheets(data) {
         },
         body: JSON.stringify(data)
     });
-    */
 
     return true;
 }
+

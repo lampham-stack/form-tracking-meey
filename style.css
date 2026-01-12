@@ -333,10 +333,10 @@ form {
 }
 
 .intro-block p {
-    font-size: 16px;
-    color: var(--text-secondary);
+    color: #4a5568;
     line-height: 1.8;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    text-align: justify;
 }
 
 .intro-block strong {
@@ -651,5 +651,6 @@ form {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 

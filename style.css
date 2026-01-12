@@ -642,4 +642,38 @@ form {
     .next-btn:hover {
         transform: none;
     }
+
+}
+
+
+/* Logo styling */
+.header-logo {
+    width: 160px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-subtitle {
+    color: #0066FF;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    margin-top: -5px;
+    text-transform: uppercase;
+}
+
+.form-header h1 {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.required {
+    color: #ff4444;
+    font-weight: bold;
+    margin-left: 3px;
 }

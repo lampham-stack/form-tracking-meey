@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo Sát Nhu Cầu Bất Động Sản - Meey Group</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h1>🏡 Khảo Sát Nhu Cầu Bất Động Sản</h1>
+                <p>Meey Group</p>
+            </div>
+
+            <form id="surveyForm">
+                <!-- Step Indicator -->
+                <div class="step-indicator">
+                    <div class="step active" id="stepIndicator0">
+                        <div class="step-number">📋</div>
+                        <div class="step-label">Giới thiệu</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" id="stepIndicator1">
+                        <div class="step-number">1</div>
+                        <div class="step-label">Nhu cầu</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" id="stepIndicator2">
+                        <div class="step-number">2</div>
+                        <div class="step-label">Kênh</div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step" id="stepIndicator3">
+                        <div class="step-number">3</div>
+                        <div class="step-label">Quan tâm</div>
+                    </div>
+                </div>
+
+                <!-- Step 0: Intro -->
+                <div class="step-content active" id="step0">
+                    <div class="intro-block">
+                        <h2>Kính gửi Quý Anh/Chị,</h2>
+                        <p>Nhằm phát triển các giải pháp công nghệ bất động sản thông minh hơn, <strong>Meey
+                                Group</strong> rất mong nhận được chia sẻ của Anh/Chị thông qua khảo sát ngắn này.</p>
+                        <p>Mọi thông tin được <strong>bảo mật tuyệt đối</strong> và chỉ phục vụ cho mục đích nghiên cứu
+                            sản phẩm.</p>
+                        <p class="intro-thanks">Trân trọng cảm ơn.</p>
+                    </div>
+                    <div class="button-row">
+                        <button type="button" class="nav-btn next-btn" id="startBtn">
+                            Bắt đầu khảo sát →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 1: Nhu cầu -->
+                <div class="step-content" id="step1">
+                    <div class="question-block">
+                        <label class="question-label">
+                            1. Nhu cầu chính của Anh/Chị đối với thị trường Bất động sản là gì?
+                        </label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="need" value="MUA">
+                                <span class="radio-custom"></span>
+                                <span class="radio-label">MUA</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="need" value="BÁN">
+                                <span class="radio-custom"></span>
+                                <span class="radio-label">BÁN</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="need" value="other" id="needOther">
+                                <span class="radio-custom"></span>
+                                <span class="radio-label">Khác (vui lòng ghi rõ)</span>
+                            </label>
+                            <input type="text" class="other-input" id="needOtherText" placeholder="Vui lòng ghi rõ..."
+                                style="display: none;">
+                        </div>
+                    </div>
+                    <div class="button-row">
+                        <button type="button" class="nav-btn prev-btn" id="prevBtn1">
+                            ← Quay lại
+                        </button>
+                        <button type="button" class="nav-btn next-btn" id="nextBtn1">
+                            Tiếp tục →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Kênh -->
+                <div class="step-content" id="step2">
+                    <div class="question-block">
+                        <label class="question-label">
+                            2. Anh/Chị thường dùng kênh nào để tìm kiếm & cập nhật thông tin Bất động sản?
+                            <span class="hint">(Chọn tối đa 02 kênh)</span>
+                        </label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="channels" value="Nền tảng Meey (Map / Atlas / Land / CRM)">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Nền tảng Meey (Map / Atlas / Land / CRM)</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="channels" value="Google/Cốc cốc">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Google/Cốc cốc</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="channels" value="Công cụ AI (ChatGPT, Gemini…)">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Công cụ AI (ChatGPT, Gemini…)</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="channels" value="Mạng xã hội (Facebook, TikTok, YouTube)">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Mạng xã hội (Facebook, TikTok, YouTube)</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="channels"
+                                    value="Website rao bán BĐS (Chợ Tốt, Batdongsan.com, OneHousing…)">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Website rao bán BĐS (Chợ Tốt, Batdongsan.com,
+                                    OneHousing…)</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="channels" value="other" id="channelsOther">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Khác (vui lòng ghi rõ)</span>
+                            </label>
+                            <input type="text" class="other-input" id="channelsOtherText"
+                                placeholder="Vui lòng ghi rõ..." style="display: none;">
+                        </div>
+                        <div class="error-message" id="channelsError" style="display: none;">
+                            ⚠️ Vui lòng chọn tối đa 2 kênh
+                        </div>
+                    </div>
+                    <div class="button-row">
+                        <button type="button" class="nav-btn prev-btn" id="prevBtn2">
+                            ← Quay lại
+                        </button>
+                        <button type="button" class="nav-btn next-btn" id="nextBtn2">
+                            Tiếp tục →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Vấn đề quan tâm -->
+                <div class="step-content" id="step3">
+                    <div class="question-block">
+                        <label class="question-label">
+                            3. Đâu là những vấn đề anh/chị quan tâm nhất hoặc mong muốn được hỗ trợ nhất khi tìm kiếm và
+                            giao dịch Bất động sản?
+                            <span class="hint">(Vui lòng chọn tối đa 03 phương án)</span>
+                        </label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concerns"
+                                    value="Cập nhật tin đăng & thông tin khu vực theo thời gian thực">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Cập nhật tin đăng & thông tin khu vực theo thời gian
+                                    thực</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concerns" value="Phân tích giá & cảnh báo rủi ro pháp lý">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Phân tích giá & cảnh báo rủi ro pháp lý</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concerns"
+                                    value="Hỗ trợ rà soát pháp lý & an toàn giao dịch">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Hỗ trợ rà soát pháp lý & an toàn giao dịch</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concerns" value='Gợi ý BĐS "may đo" theo nhu cầu cá nhân'>
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Gợi ý BĐS "may đo" theo nhu cầu cá nhân</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concerns"
+                                    value="Trợ lý AI đa nền tảng 24/7 (Zalo, Messenger…)">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Trợ lý AI đa nền tảng 24/7 (Zalo, Messenger…)</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concerns" value="Theo dõi biến động & quản lý tài sản BĐS">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Theo dõi biến động & quản lý tài sản BĐS</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concerns" value="other" id="concernsOther">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Khác (vui lòng ghi rõ)</span>
+                            </label>
+                            <input type="text" class="other-input" id="concernsOtherText"
+                                placeholder="Vui lòng ghi rõ..." style="display: none;">
+                        </div>
+                        <div class="error-message" id="concernsError" style="display: none;">
+                            ⚠️ Vui lòng chọn tối đa 3 phương án
+                        </div>
+                    </div>
+                    <div class="button-row">
+                        <button type="button" class="nav-btn prev-btn" id="prevBtn3">
+                            ← Quay lại
+                        </button>
+                        <button type="submit" class="nav-btn submit-btn">
+                            Gửi Khảo Sát ✓
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Success Message -->
+            <div class="success-message" id="successMessage" style="display: none;">
+                <div class="success-icon">✓</div>
+                <h2>Cảm ơn bạn đã tham gia khảo sát!</h2>
+                <p>Thông tin của bạn đã được ghi nhận thành công.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

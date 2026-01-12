@@ -4,28 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khảo Sát Nhu Cầu Bất Động Sản - Meey Group</title>
-    <link rel="stylesheet" href="style-new.css">
+    <title>Khảo Sát Nhu Cầu Bất Động Sản - Meey</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
     <div class="container">
         <div class="form-wrapper">
             <div class="form-header">
                 <h1>🏡 Khảo Sát Nhu Cầu Bất Động Sản</h1>
-                <p>Meey Group</p>
+                <p>Giúp chúng tôi hiểu rõ hơn về nhu cầu của bạn</p>
             </div>
 
             <form id="surveyForm">
                 <!-- Step Indicator -->
                 <div class="step-indicator">
-                    <div class="step active" id="stepIndicator0">
-                        <div class="step-number">📋</div>
-                        <div class="step-label">Giới thiệu</div>
-                    </div>
-                    <div class="step-line"></div>
-                    <div class="step" id="stepIndicator1">
+                    <div class="step active" id="stepIndicator1">
                         <div class="step-number">1</div>
                         <div class="step-label">Nhu cầu</div>
                     </div>
@@ -41,56 +35,24 @@
                     </div>
                 </div>
 
-                <!-- Step 0: Intro -->
-                <div class="step-content active" id="step0">
-                    <div class="intro-block">
-                        <h2>Kính gửi Quý Anh/Chị,</h2>
-                        <p>Nhằm phát triển các giải pháp công nghệ bất động sản thông minh hơn, <strong>Meey
-                                Group</strong> rất mong nhận được chia sẻ của Anh/Chị thông qua khảo sát ngắn này.</p>
-                        <p>Mọi thông tin được <strong>bảo mật tuyệt đối</strong> và chỉ phục vụ cho mục đích nghiên cứu
-                            sản phẩm.</p>
-                        <p class="intro-thanks">Trân trọng cảm ơn.</p>
-                    </div>
-                    <div class="button-row">
-                        <button type="button" class="nav-btn next-btn" id="startBtn">
-                            Bắt đầu khảo sát →
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Step 1: Nhu cầu -->
-                <div class="step-content" id="step1">
+                <!-- Step 1: Nhu cầu (MUA/BÁN) -->
+                <div class="step-content active" id="step1">
                     <div class="question-block">
                         <label class="question-label">
-                            1. Nhu cầu chính của Anh/Chị đối với thị trường Bất động sản là gì?
+                            Nhu cầu của bạn là gì?
                         </label>
-                        <div class="radio-group">
-                            <label class="radio-option">
-                                <input type="radio" name="need" value="MUA">
-                                <span class="radio-custom"></span>
-                                <span class="radio-label">MUA</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="need" value="BÁN">
-                                <span class="radio-custom"></span>
-                                <span class="radio-label">BÁN</span>
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="need" value="other" id="needOther">
-                                <span class="radio-custom"></span>
-                                <span class="radio-label">Khác (vui lòng ghi rõ)</span>
-                            </label>
-                            <input type="text" class="other-input" id="needOtherText" placeholder="Vui lòng ghi rõ..."
-                                style="display: none;">
+                        <div class="button-group">
+                            <button type="button" class="choice-btn" data-value="MUA">
+                                <span class="choice-icon">🏠</span>
+                                <span class="choice-text">MUA</span>
+                                <span class="choice-desc">Tôi muốn mua bất động sản</span>
+                            </button>
+                            <button type="button" class="choice-btn" data-value="BÁN">
+                                <span class="choice-icon">💼</span>
+                                <span class="choice-text">BÁN</span>
+                                <span class="choice-desc">Tôi muốn bán/cho thuê bất động sản</span>
+                            </button>
                         </div>
-                    </div>
-                    <div class="button-row">
-                        <button type="button" class="nav-btn prev-btn" id="prevBtn1">
-                            ← Quay lại
-                        </button>
-                        <button type="button" class="nav-btn next-btn" id="nextBtn1">
-                            Tiếp tục →
-                        </button>
                     </div>
                 </div>
 
@@ -98,47 +60,54 @@
                 <div class="step-content" id="step2">
                     <div class="question-block">
                         <label class="question-label">
-                            2. Anh/Chị thường dùng kênh nào để tìm kiếm & cập nhật thông tin Bất động sản?
-                            <span class="hint">(Chọn tối đa 02 kênh)</span>
+                            Anh/Chị thường cập nhật thông tin BĐS qua kênh nào?
+                            <span class="hint">(Chọn tối đa 02 phương án)</span>
                         </label>
                         <div class="checkbox-group">
                             <label class="checkbox-option">
-                                <input type="checkbox" name="channels" value="Nền tảng Meey (Map / Atlas / Land / CRM)">
+                                <input type="checkbox" name="channels" value="Meey Map">
                                 <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Nền tảng Meey (Map / Atlas / Land / CRM)</span>
+                                <span class="checkbox-label">[Hệ sinh thái Meey] Meey Map</span>
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox" name="channels" value="Google/Cốc cốc">
+                                <input type="checkbox" name="channels" value="Meey Atlas">
                                 <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Google/Cốc cốc</span>
+                                <span class="checkbox-label">[Hệ sinh thái Meey] Meey Atlas</span>
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox" name="channels" value="Công cụ AI (ChatGPT, Gemini…)">
+                                <input type="checkbox" name="channels" value="Meey Land">
                                 <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Công cụ AI (ChatGPT, Gemini…)</span>
+                                <span class="checkbox-label">[Hệ sinh thái Meey] Meey Land</span>
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox" name="channels" value="Mạng xã hội (Facebook, TikTok, YouTube)">
+                                <input type="checkbox" name="channels" value="Meey CRM">
                                 <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Mạng xã hội (Facebook, TikTok, YouTube)</span>
+                                <span class="checkbox-label">[Hệ sinh thái Meey] Meey CRM</span>
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox" name="channels"
-                                    value="Website rao bán BĐS (Chợ Tốt, Batdongsan.com, OneHousing…)">
+                                <input type="checkbox" name="channels" value="Google Search">
                                 <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Website rao bán BĐS (Chợ Tốt, Batdongsan.com,
-                                    OneHousing…)</span>
+                                <span class="checkbox-label">[Kênh khác] Google Search</span>
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox" name="channels" value="other" id="channelsOther">
+                                <input type="checkbox" name="channels" value="Công cụ AI">
                                 <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Khác (vui lòng ghi rõ)</span>
+                                <span class="checkbox-label">[Kênh khác] Công cụ AI (ChatGPT, Gemini...)</span>
                             </label>
-                            <input type="text" class="other-input" id="channelsOtherText"
-                                placeholder="Vui lòng ghi rõ..." style="display: none;">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="channels" value="Mạng xã hội">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">[Kênh khác] Mạng xã hội (Facebook, TikTok, YT)</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="channels" value="Trang rao bán">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">[Kênh khác] Các trang rao bán nhà (Chợ Tốt,
+                                    Batdongsan.com...)</span>
+                            </label>
                         </div>
                         <div class="error-message" id="channelsError" style="display: none;">
-                            ⚠️ Vui lòng chọn tối đa 2 kênh
+                            ⚠️ Vui lòng chọn tối đa 2 phương án
                         </div>
                     </div>
                     <div class="button-row">
@@ -151,66 +120,118 @@
                     </div>
                 </div>
 
-                <!-- Step 3: Vấn đề quan tâm -->
-                <div class="step-content" id="step3">
+                <!-- Step 3: Vấn đề quan tâm (MUA) -->
+                <div class="step-content" id="step3Mua">
                     <div class="question-block">
                         <label class="question-label">
-                            3. Đâu là những vấn đề anh/chị quan tâm nhất hoặc mong muốn được hỗ trợ nhất khi tìm kiếm và
-                            giao dịch Bất động sản?
-                            <span class="hint">(Vui lòng chọn tối đa 03 phương án)</span>
+                            Vấn đề bạn quan tâm nhất khi <strong>MUA</strong> BĐS?
+                            <span class="hint">(Chọn tối đa 03 phương án)</span>
                         </label>
                         <div class="checkbox-group">
                             <label class="checkbox-option">
-                                <input type="checkbox" name="concerns"
-                                    value="Cập nhật tin đăng & thông tin khu vực theo thời gian thực">
+                                <input type="checkbox" name="concernsMua" value="Trợ lý dẫn đường">
                                 <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Cập nhật tin đăng & thông tin khu vực theo thời gian
-                                    thực</span>
+                                <span class="checkbox-label">Trợ lý dẫn đường: Cập nhật tin đăng và thông tin tòa
+                                    nhà/khu vực tức thì</span>
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox" name="concerns" value="Phân tích giá & cảnh báo rủi ro pháp lý">
+                                <input type="checkbox" name="concernsMua" value="Định giá & Rủi ro">
                                 <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Phân tích giá & cảnh báo rủi ro pháp lý</span>
+                                <span class="checkbox-label">Định giá & Rủi ro: Phân tích, định giá thị trường và cảnh
+                                    báo pháp lý tiềm ẩn</span>
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox" name="concerns"
-                                    value="Hỗ trợ rà soát pháp lý & an toàn giao dịch">
+                                <input type="checkbox" name="concernsMua" value="Gợi ý tự động">
                                 <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Hỗ trợ rà soát pháp lý & an toàn giao dịch</span>
+                                <span class="checkbox-label">Gợi ý tự động: Nhận đề xuất BĐS "may đo" và đánh giá từ
+                                    cộng đồng</span>
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox" name="concerns" value='Gợi ý BĐS "may đo" theo nhu cầu cá nhân'>
+                                <input type="checkbox" name="concernsMua" value="Kết nối đa nền tảng">
                                 <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Gợi ý BĐS "may đo" theo nhu cầu cá nhân</span>
+                                <span class="checkbox-label">Kết nối đa nền tảng: Dùng trợ lý ảo 24/7 trên Zalo,
+                                    Messenger, Telegram...</span>
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox" name="concerns"
-                                    value="Trợ lý AI đa nền tảng 24/7 (Zalo, Messenger…)">
+                                <input type="checkbox" name="concernsMua" value="An toàn giao dịch">
                                 <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Trợ lý AI đa nền tảng 24/7 (Zalo, Messenger…)</span>
+                                <span class="checkbox-label">An toàn giao dịch: Hỗ trợ rà soát pháp lý</span>
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox" name="concerns" value="Theo dõi biến động & quản lý tài sản BĐS">
+                                <input type="checkbox" name="concernsMua" value="Quản lý tài sản số">
                                 <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Theo dõi biến động & quản lý tài sản BĐS</span>
+                                <span class="checkbox-label">Quản lý tài sản số: Theo dõi biến động giá và báo cáo "sức
+                                    khỏe" tài sản sở hữu</span>
                             </label>
-                            <label class="checkbox-option">
-                                <input type="checkbox" name="concerns" value="other" id="concernsOther">
-                                <span class="checkbox-custom"></span>
-                                <span class="checkbox-label">Khác (vui lòng ghi rõ)</span>
-                            </label>
-                            <input type="text" class="other-input" id="concernsOtherText"
-                                placeholder="Vui lòng ghi rõ..." style="display: none;">
                         </div>
-                        <div class="error-message" id="concernsError" style="display: none;">
+                        <div class="error-message" id="concernsErrorMua" style="display: none;">
                             ⚠️ Vui lòng chọn tối đa 3 phương án
                         </div>
                     </div>
                     <div class="button-row">
-                        <button type="button" class="nav-btn prev-btn" id="prevBtn3">
+                        <button type="button" class="nav-btn prev-btn" id="prevBtn3Mua">
                             ← Quay lại
                         </button>
-                        <button type="submit" class="nav-btn submit-btn">
+                        <button type="submit" class="nav-btn submit-btn" id="submitBtnMua">
+                            Gửi Khảo Sát ✓
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Vấn đề quan tâm (BÁN) -->
+                <div class="step-content" id="step3Ban">
+                    <div class="question-block">
+                        <label class="question-label">
+                            Vấn đề bạn quan tâm nhất khi <strong>BÁN/CHO THUÊ</strong> BĐS?
+                            <span class="hint">(Chọn tối đa 03 phương án)</span>
+                        </label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concernsBan" value="Tiếp cận khách hàng">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Tiếp cận khách hàng: Đăng tin nhanh và tiếp cận đúng đối
+                                    tượng mục tiêu</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concernsBan" value="Định giá cạnh tranh">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Định giá cạnh tranh: Công cụ định giá thị trường để bán
+                                    nhanh, giá tốt</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concernsBan" value="Quản lý tin đăng">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Quản lý tin đăng: Theo dõi hiệu quả tin đăng và tương tác
+                                    khách hàng</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concernsBan" value="Kết nối đa nền tảng">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">Kết nối đa nền tảng: Đăng tin đồng bộ trên nhiều kênh
+                                    (Facebook, Zalo, web...)</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concernsBan" value="An toàn giao dịch">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">An toàn giao dịch: Xác thực khách hàng và hỗ trợ pháp
+                                    lý</span>
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="concernsBan" value="CRM & Automation">
+                                <span class="checkbox-custom"></span>
+                                <span class="checkbox-label">CRM & Automation: Tự động hóa chăm sóc khách hàng và quản
+                                    lý lead</span>
+                            </label>
+                        </div>
+                        <div class="error-message" id="concernsErrorBan" style="display: none;">
+                            ⚠️ Vui lòng chọn tối đa 3 phương án
+                        </div>
+                    </div>
+                    <div class="button-row">
+                        <button type="button" class="nav-btn prev-btn" id="prevBtn3Ban">
+                            ← Quay lại
+                        </button>
+                        <button type="submit" class="nav-btn submit-btn" id="submitBtnBan">
                             Gửi Khảo Sát ✓
                         </button>
                     </div>
@@ -226,7 +247,7 @@
         </div>
     </div>
 
-    <script src="script-new.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
